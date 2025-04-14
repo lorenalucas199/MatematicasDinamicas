@@ -83,7 +83,7 @@
         //Función principal para dibujar la gráfica
         function graficar(){
                 function f(x){ 
-                    return document.getElementById("funcionintro").value //función introducida por el usuario
+                    return eval(document.getElementById("funcionintro").value) //función introducida por el usuario
                 }
                 ctx.clearRect(0,0,c.width,c.height); //limpiar el canvas
                 dibujarEjes(); //dibujar los ejes cartesianos
