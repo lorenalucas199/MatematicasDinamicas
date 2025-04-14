@@ -88,7 +88,7 @@
                 ctx.clearRect(0,0,c.width,c.height); //limpiar el canvas
                 dibujarEjes(); //dibujar los ejes cartesianos
                 dibujarFuncion(f); //dibujar la función
-                dibujarPuntoTangente(); //dibujar el punto y su recta tangente
+                dibujarPuntoTangente(f); //dibujar el punto y su recta tangente
         }
 
         //Dibujar los ejes X e Y en negro
@@ -115,7 +115,7 @@
         }
 
         //Dibujar el punto sobre la función y su recta tangente 
-        function dibujarPuntoTangente(){
+        function dibujarPuntoTangente(f){
             let coordCanvas=c.getBoundingClientRect();
             xPunto=(event.clientX - coordCanvas.x - c.width/2)/zoom ;
             let yPunto=f(xPunto);
