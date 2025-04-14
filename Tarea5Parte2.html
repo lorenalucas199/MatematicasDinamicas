@@ -117,7 +117,7 @@
         //Dibujar el punto sobre la función y su recta tangente 
         function dibujarPuntoTangente(f){
             let coordCanvas=c.getBoundingClientRect();
-            xPunto=(event.clientX - coordCanvas.x - c.width/2)/zoom ;
+            let xPunto=(event.clientX - coordCanvas.x - c.width/2)/zoom ;
             let yPunto=f(xPunto);
             let pendiente=derivada(f, xPunto);
             
